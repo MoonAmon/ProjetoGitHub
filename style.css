@@ -1,118 +1,97 @@
-body{
-    margin: 0%;
-    padding: 0%;
-    background-color: #ffff;
-    width: 100%;
-}
-h2{
-    color: white;
-    text-align: center;
-    margin: auto;
-}
-nav{
-    background-color: rgb(255, 255, 255);
-    height: 5rem;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-nav input, select{
-    float: right;
-    margin-right: 1rem;
-    float: right;
-    position: relative;
-    top: 50px;
-    right: 5%;
+
+body {
+    font-family: 'Roboto', sans-serif;
 }
-nav select{
-    border: none;
-    width: 10%;
-    color: gray;
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    border-bottom: 0.5px solid #CCC;
 }
-nav input{
-    border-radius: 25px;
-    width: 75px;
-    padding: auto;
+
+#header img {
+    width: 80px;
+}
+
+#header .navigation {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+#header .navigation a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+}
+
+.login, .cadastro {
+    padding: 8px 48px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.login{
+    border: 1px solid #349730;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.cadastro{
     border: none;
     background-color: #349730;
     color: white;
 }
-nav input:hover{
-    background-color: #C80C0F;
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 78vh;
+    gap: 15px;
+    padding: 0 1rem;
 }
-.title{
-    font-weight: 600;
+
+main h1 {
+    font-size: 50px;
+    line-height: 66px;
+    font-weight: 500;
+}
+
+main .paragrafos {
+    width: 478px;
+}
+
+main .paragrafos p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 1rem;
     line-height: 30px;
 }
 
-/*formulario*/
-main{
-    margin-top: 10%;
-    box-sizing: border-box;
-}
-main h2{
-    color: black;
+main img {
+    width: 330px;
 }
 
-.padding-formulario{
-    padding: 2%;
-    text-align: center;
-    box-sizing: border-box;
-    
-    
-}
-.g-3{
-    justify-content: center;
-    align-items: center;
-    margin-top: 1%;
-    flex-wrap: wrap;
-    
-}
-.g-3 input{
-    padding: 0.8rem;
-    width: 75%;
-    margin-top: 5%;
-    
-}
-.col{
-    width: 35%;
-}
-
-.flex{
+footer {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-top: 7%;
-
-}
-.flex input{
-    border-radius: 10px;
-    padding: 1%;
-    width: 8rem;
-    border: none;
-    margin-bottom: 5rem;
-    background-color: #349730;
-    color: white;
-}
-.flex input:hover{
-    background-color:#C80C0F ;
-    color: white;
-    
-}
-
-footer{
-	text-align: center;
-    height: 2rem;
-
-	
-}
-footer{
-    background-color: rgb(52, 43, 43);
+    align-items: center;
     width: 100%;
-    color: white;
-    padding: 3%;
-
+    height: 10vh;
+    background-color: #455A64;
 }
-.ifb-brand{
-    width: 260px;
-    height: 87.054px;
-    flex-shrink: 0;
+
+footer p {
+    font-size: 20px;
+    color: #ffffff;
 }
